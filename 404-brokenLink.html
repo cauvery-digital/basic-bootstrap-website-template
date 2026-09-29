@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>404 - Broken Link</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      background: #f5f7fb;
+      color: #1e293b;
+
+      overflow: hidden;
+    }
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    .error-page {
+      width: 90%;
+      max-width: 850px;
+      text-align: center;
+    }
+
+    /* =========================
+       BROKEN LINK
+    ========================= */
+
+    .broken-link {
+      position: relative;
+
+      width: 500px;
+      max-width: 90vw;
+
+      height: 180px;
+
+      margin: 0 auto 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Link pieces */
+
+    .link {
+      position: absolute;
+
+      width: 170px;
+      height: 75px;
+
+      border: 14px solid #475569;
+
+      border-radius: 50px;
+
+      background: transparent;
+
+      box-shadow:
+        0 8px 20px rgba(15, 23, 42, .15);
+    }
+
+    .link-left {
+      left: 55px;
+
+      transform: rotate(32deg);
+
+      animation: breakLeft 3s ease-in-out infinite;
+    }
+
+    .link-right {
+      right: 55px;
+
+      transform: rotate(-32deg);
+
+      animation: breakRight 3s ease-in-out infinite;
+    }
+
+    /* =========================
+       BROKEN ENDS
+    ========================= */
+
+    .link-left::after,
+    .link-right::after {
+      content: "";
+
+      position: absolute;
+
+      width: 25px;
+      height: 25px;
+
+      background: #475569;
+
+      border-radius: 50%;
+    }
+
+    .link-left::after {
+      right: -19px;
+      top: 10px;
+    }
+
+    .link-right::after {
+      left: -19px;
+      top: 10px;
+    }
+
+    /* =========================
+       CRACK
+    ========================= */
+
+    .crack {
+      position: absolute;
+
+      width: 45px;
+      height: 75px;
+
+      left: 50%;
+      top: 52px;
+
+      transform: translateX(-50%);
+
+      z-index: 5;
+    }
+
+    .crack::before,
+    .crack::after {
+      content: "";
+
+      position: absolute;
+
+      width: 5px;
+      height: 38px;
+
+      background: #ef4444;
+
+      border-radius: 10px;
+    }
+
+    .crack::before {
+      left: 10px;
+      top: 0;
+
+      transform: rotate(35deg);
+    }
+
+    .crack::after {
+      right: 10px;
+      bottom: 0;
+
+      transform: rotate(35deg);
+    }
+
+    /* =========================
+       BREAK ANIMATION
+    ========================= */
+
+    @keyframes breakLeft {
+
+      0%,
+      100% {
+        transform:
+          translateX(0)
+          rotate(32deg);
+      }
+
+      35% {
+        transform:
+          translateX(-8px)
+          rotate(30deg);
+      }
+
+      50% {
+        transform:
+          translateX(-28px)
+          rotate(26deg);
+      }
+
+      70% {
+        transform:
+          translateX(-15px)
+          rotate(30deg);
+      }
+    }
+
+    @keyframes breakRight {
+
+      0%,
+      100% {
+        transform:
+          translateX(0)
+          rotate(-32deg);
+      }
+
+      35% {
+        transform:
+          translateX(8px)
+          rotate(-30deg);
+      }
+
+      50% {
+        transform:
+          translateX(28px)
+          rotate(-26deg);
+      }
+
+      70% {
+        transform:
+          translateX(15px)
+          rotate(-30deg);
+      }
+    }
+
+    /* =========================
+       FLOATING PIECES
+    ========================= */
+
+    .piece {
+      position: absolute;
+
+      width: 8px;
+      height: 8px;
+
+      background: #ef4444;
+
+      border-radius: 50%;
+
+      opacity: 0;
+
+      animation: pieces 3s ease-in-out infinite;
+    }
+
+    .piece-1 {
+      left: 45%;
+      top: 50px;
+    }
+
+    .piece-2 {
+      left: 52%;
+      top: 105px;
+
+      animation-delay: .3s;
+    }
+
+    .piece-3 {
+      left: 48%;
+      top: 80px;
+
+      animation-delay: .6s;
+    }
+
+    @keyframes pieces {
+
+      0%,
+      30% {
+        opacity: 0;
+        transform: translate(0, 0) scale(.5);
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      75% {
+        opacity: 0;
+
+        transform:
+          translateY(-35px)
+          scale(1.3);
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* =========================
+       404 NUMBER
+    ========================= */
+
+    .error-number {
+      font-size: clamp(80px, 15vw, 150px);
+
+      font-weight: 900;
+
+      line-height: .9;
+
+      color: #1e293b;
+
+      letter-spacing: -8px;
+
+      animation: numberFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes numberFloat {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-7px);
+      }
+    }
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    h1 {
+      margin-top: 25px;
+
+      font-size: clamp(28px, 5vw, 44px);
+
+      animation: fadeUp .8s ease both;
+    }
+
+    p {
+      max-width: 560px;
+
+      margin: 15px auto 0;
+
+      font-size: 17px;
+
+      line-height: 1.7;
+
+      color: #64748b;
+
+      animation: fadeUp 1s ease both;
+    }
+
+    @keyframes fadeUp {
+
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .home-button {
+      display: inline-block;
+
+      margin-top: 28px;
+
+      padding: 14px 28px;
+
+      background: #1e293b;
+
+      color: #fff;
+
+      text-decoration: none;
+
+      border-radius: 8px;
+
+      font-weight: 600;
+
+      transition:
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+
+      animation: fadeUp 1.2s ease both;
+    }
+
+    .home-button:hover {
+      background: #334155;
+
+      transform: translateY(-4px);
+
+      box-shadow:
+        0 10px 25px rgba(15, 23, 42, .2);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      .broken-link {
+        height: 140px;
+      }
+
+      .link {
+        width: 125px;
+        height: 58px;
+
+        border-width: 11px;
+      }
+
+      .link-left {
+        left: 18px;
+      }
+
+      .link-right {
+        right: 18px;
+      }
+
+      .link-left::after,
+      .link-right::after {
+        width: 20px;
+        height: 20px;
+      }
+
+      .crack {
+        top: 40px;
+      }
+
+      .error-number {
+        letter-spacing: -5px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    /* Accessibility */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="error-page">
+
+    <!-- Broken Link Animation -->
+    <div class="broken-link">
+
+      <div class="link link-left"></div>
+
+      <div class="link link-right"></div>
+
+      <div class="crack"></div>
+
+      <span class="piece piece-1"></span>
+      <span class="piece piece-2"></span>
+      <span class="piece piece-3"></span>
+
+    </div>
+
+
+    <!-- 404 -->
+    <div class="error-number">
+      404
+    </div>
+
+
+    <h1>
+      Broken Link
+    </h1>
+
+
+    <p>
+      The link you're trying to follow appears to be broken,
+      expired, or the page has been moved somewhere else.
+    </p>
+
+
+    <a href="/" class="home-button">
+      ← Back to Home
+    </a>
+
+  </main>
+
+</body>
+</html>

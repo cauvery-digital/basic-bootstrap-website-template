@@ -1,0 +1,1156 @@
+Here is a complete cookie-policy.html matching the Bootstrap-based legal pages we created. It explains essential, preference, analytics, marketing, and third-party cookies and includes cookie-management information.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- =========================
+       META
+  ========================== -->
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Cookie Policy for XYZ Web Solutions explaining how cookies and similar technologies are used on our website.">
+
+  <meta name="author"
+        content="XYZ Web Solutions">
+
+  <meta name="robots"
+        content="index, follow">
+
+  <meta name="theme-color"
+        content="#0d6efd">
+
+  <title>Cookie Policy | XYZ Web Solutions</title>
+
+
+  <!-- =========================
+       BOOTSTRAP 5.3
+  ========================== -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+
+  <!-- =========================
+       BOOTSTRAP ICONS
+  ========================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body class="bg-light">
+
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold fs-4"
+         href="index.html">
+
+        <i class="bi bi-code-slash text-primary"></i>
+
+        XYZ<span class="text-primary">Web</span>
+
+      </a>
+
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+
+      <div class="collapse navbar-collapse"
+           id="mainNavbar">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+          <li class="nav-item">
+
+            <a class="nav-link"
+               href="index.html">
+
+              Home
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a class="nav-link"
+               href="index.html#services">
+
+              Services
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a class="nav-link"
+               href="index.html#about">
+
+              About
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a class="nav-link"
+               href="index.html#portfolio">
+
+              Portfolio
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a class="nav-link"
+               href="index.html#contact">
+
+              Contact
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- =====================================================
+       PAGE HEADER
+  ====================================================== -->
+
+  <header class="bg-dark text-white py-5">
+
+    <div class="container py-4">
+
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <span class="badge text-bg-primary mb-3">
+
+            <i class="bi bi-cookie me-1"></i>
+
+            Legal Information
+
+          </span>
+
+
+          <h1 class="display-5 fw-bold">
+            Cookie Policy
+          </h1>
+
+
+          <p class="lead text-white-50 mb-0">
+
+            This policy explains how XYZ Web Solutions
+            uses cookies and similar technologies on our
+            website.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       CONTENT
+  ====================================================== -->
+
+  <main>
+
+    <div class="container py-5">
+
+      <div class="row justify-content-center">
+
+
+        <div class="col-lg-9">
+
+
+          <!-- Policy Introduction -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <p class="text-secondary">
+
+                <strong>Last Updated:</strong>
+                September 2026
+
+              </p>
+
+
+              <p>
+
+                This Cookie Policy explains how
+                <strong>XYZ Web Solutions</strong>
+                ("we", "us", "our") uses cookies and
+                similar technologies when you visit our
+                website.
+
+              </p>
+
+
+              <p class="mb-0">
+
+                Cookies help us operate our website,
+                remember preferences, understand how
+                visitors use our website, improve
+                performance, and provide relevant
+                functionality.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 1 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                1. What Are Cookies?
+
+              </h2>
+
+
+              <p>
+
+                Cookies are small text files that may be
+                placed on your computer, smartphone, tablet,
+                or other device when you visit a website.
+
+              </p>
+
+
+              <p class="mb-0">
+
+                Cookies allow a website to recognize a
+                device and remember certain information
+                about a user's visit or preferences.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 2 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                2. Why We Use Cookies
+
+              </h2>
+
+
+              <p>
+
+                We may use cookies and similar technologies
+                for several purposes, including:
+
+              </p>
+
+
+              <ul>
+
+                <li>
+                  Operating essential website functions.
+                </li>
+
+                <li>
+                  Maintaining website security.
+                </li>
+
+                <li>
+                  Remembering user preferences.
+                </li>
+
+                <li>
+                  Understanding how visitors use our website.
+                </li>
+
+                <li>
+                  Measuring website performance.
+                </li>
+
+                <li>
+                  Improving our website and services.
+                </li>
+
+                <li>
+                  Supporting marketing or advertising activities
+                  where applicable.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 3 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                3. Types of Cookies We May Use
+
+              </h2>
+
+
+              <h3 class="h5 fw-bold mt-4">
+
+                Essential Cookies
+
+              </h3>
+
+              <p>
+
+                These cookies may be necessary for certain
+                website functions, security features, navigation,
+                or other essential operations.
+
+              </p>
+
+
+              <h3 class="h5 fw-bold mt-4">
+
+                Preference Cookies
+
+              </h3>
+
+              <p>
+
+                These cookies may remember choices and
+                preferences made by visitors, such as language,
+                region, or other settings.
+
+              </p>
+
+
+              <h3 class="h5 fw-bold mt-4">
+
+                Analytics Cookies
+
+              </h3>
+
+              <p>
+
+                These cookies may help us understand how
+                visitors interact with our website, including
+                which pages are visited and how users navigate
+                through the website.
+
+              </p>
+
+
+              <h3 class="h5 fw-bold mt-4">
+
+                Performance Cookies
+
+              </h3>
+
+              <p>
+
+                These cookies may be used to understand
+                website performance and identify technical
+                issues that may affect the user experience.
+
+              </p>
+
+
+              <h3 class="h5 fw-bold mt-4">
+
+                Marketing Cookies
+
+              </h3>
+
+              <p class="mb-0">
+
+                Where applicable, marketing or advertising
+                technologies may be used to understand
+                interactions with advertisements or marketing
+                campaigns.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 4 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                4. First-Party Cookies
+
+              </h2>
+
+
+              <p class="mb-0">
+
+                First-party cookies are cookies placed by
+                our website or by services operating directly
+                on our behalf. They may be used for website
+                functionality, preferences, security, analytics,
+                or other purposes described in this policy.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 5 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                5. Third-Party Cookies
+
+              </h2>
+
+
+              <p>
+
+                Some features on our website may be provided
+                by third-party services. These services may
+                place their own cookies or use similar tracking
+                technologies.
+
+              </p>
+
+
+              <p>
+
+                Depending on the services used by our website,
+                third parties may include:
+
+              </p>
+
+
+              <ul>
+
+                <li>Analytics providers</li>
+
+                <li>Payment providers</li>
+
+                <li>Social media platforms</li>
+
+                <li>Advertising providers</li>
+
+                <li>Security and anti-spam services</li>
+
+                <li>Embedded media providers</li>
+
+                <li>Customer support platforms</li>
+
+              </ul>
+
+
+              <p class="mb-0">
+
+                Third-party providers may process information
+                according to their own privacy policies and
+                terms.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 6 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                6. Google Analytics
+
+              </h2>
+
+
+              <p>
+
+                If Google Analytics or a similar analytics
+                service is enabled on our website, it may use
+                cookies or similar technologies to collect
+                information about website usage.
+
+              </p>
+
+
+              <p class="mb-0">
+
+                Analytics information may help us understand
+                website traffic, user interactions, performance,
+                and general usage patterns.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 7 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                7. Managing Cookies
+
+              </h2>
+
+
+              <p>
+
+                Most modern web browsers allow you to view,
+                block, delete, or otherwise manage cookies
+                through browser settings.
+
+              </p>
+
+
+              <p>
+
+                You can generally manage cookie settings through
+                options such as:
+
+              </p>
+
+
+              <ul>
+
+                <li>Browser privacy settings</li>
+
+                <li>Browser security settings</li>
+
+                <li>Cookie preferences</li>
+
+                <li>Site permissions</li>
+
+                <li>Browser extensions or privacy controls</li>
+
+              </ul>
+
+
+              <div class="alert alert-warning">
+
+                <i class="bi bi-exclamation-triangle me-2"></i>
+
+                Disabling certain cookies may affect the
+                functionality or performance of parts of our
+                website.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 8 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                8. Cookie Consent
+
+              </h2>
+
+
+              <p>
+
+                Where required by applicable law, we may ask
+                visitors for consent before placing certain
+                non-essential cookies on their device.
+
+              </p>
+
+
+              <p class="mb-0">
+
+                You may be able to change or withdraw your
+                cookie preferences through the cookie
+                preference mechanism provided on our website,
+                where available.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 9 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                9. Do Not Track Signals
+
+              </h2>
+
+
+              <p class="mb-0">
+
+                Some browsers provide "Do Not Track" or similar
+                privacy settings. Because there is currently no
+                universally accepted standard for responding to
+                such signals, our website may not respond to all
+                browser-based Do Not Track settings.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 10 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                10. Privacy Policy
+
+              </h2>
+
+
+              <p class="mb-0">
+
+                Cookies may involve the collection or processing
+                of information that is considered personal
+                information under applicable laws. For additional
+                information about how we collect, use, store, and
+                protect personal information, please review our
+                <a href="privacy-policy.html">
+                  Privacy Policy
+                </a>.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 11 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                11. Changes to This Cookie Policy
+
+              </h2>
+
+
+              <p class="mb-0">
+
+                We may update this Cookie Policy from time to
+                time to reflect changes in our website,
+                technologies, services, legal requirements, or
+                business practices.
+
+                Updated versions will be published on this page
+                with a revised "Last Updated" date.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- 12 -->
+
+          <div class="card border-0 shadow-sm mb-4">
+
+            <div class="card-body p-4 p-md-5">
+
+              <h2 class="h3 fw-bold mb-3">
+
+                12. Contact Us
+
+              </h2>
+
+
+              <p>
+
+                If you have questions about this Cookie Policy
+                or how we use cookies, please contact us.
+
+              </p>
+
+
+              <ul class="list-unstyled">
+
+                <li class="mb-2">
+
+                  <i class="bi bi-building text-primary me-2"></i>
+
+                  <strong>Company:</strong>
+                  XYZ Web Solutions
+
+                </li>
+
+
+                <li class="mb-2">
+
+                  <i class="bi bi-envelope text-primary me-2"></i>
+
+                  <strong>Email:</strong>
+                  privacy@example.com
+
+                </li>
+
+
+                <li class="mb-2">
+
+                  <i class="bi bi-telephone text-primary me-2"></i>
+
+                  <strong>Phone:</strong>
+                  +91 XXXXX XXXXX
+
+                </li>
+
+
+                <li>
+
+                  <i class="bi bi-geo-alt text-primary me-2"></i>
+
+                  <strong>Address:</strong>
+                  Your Business Address, India
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Back Button -->
+
+          <div class="text-center mt-5">
+
+            <a href="index.html"
+               class="btn btn-primary px-4">
+
+              <i class="bi bi-arrow-left me-2"></i>
+
+              Back to Home
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="bg-dark text-white pt-5">
+
+    <div class="container">
+
+      <div class="row g-4 pb-5">
+
+
+        <!-- Company -->
+
+        <div class="col-lg-4">
+
+          <a href="index.html"
+             class="text-white text-decoration-none">
+
+            <h2 class="h4 fw-bold">
+
+              <i class="bi bi-code-slash text-primary"></i>
+
+              XYZ<span class="text-primary">Web</span>
+
+            </h2>
+
+          </a>
+
+
+          <p class="text-white-50 mt-3">
+
+            Modern websites and web applications
+            built for growing businesses.
+
+          </p>
+
+
+          <div class="d-flex gap-3">
+
+            <a href="#"
+               class="text-white fs-5"
+               aria-label="Facebook">
+
+              <i class="bi bi-facebook"></i>
+
+            </a>
+
+            <a href="#"
+               class="text-white fs-5"
+               aria-label="Instagram">
+
+              <i class="bi bi-instagram"></i>
+
+            </a>
+
+            <a href="#"
+               class="text-white fs-5"
+               aria-label="LinkedIn">
+
+              <i class="bi bi-linkedin"></i>
+
+            </a>
+
+            <a href="#"
+               class="text-white fs-5"
+               aria-label="GitHub">
+
+              <i class="bi bi-github"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Quick Links -->
+
+        <div class="col-6 col-lg-2">
+
+          <h3 class="h6 fw-bold">
+            Company
+          </h3>
+
+          <ul class="list-unstyled">
+
+            <li class="mb-2">
+
+              <a href="index.html#about"
+                 class="text-white-50 text-decoration-none">
+
+                About
+
+              </a>
+
+            </li>
+
+
+            <li class="mb-2">
+
+              <a href="index.html#services"
+                 class="text-white-50 text-decoration-none">
+
+                Services
+
+              </a>
+
+            </li>
+
+
+            <li class="mb-2">
+
+              <a href="index.html#portfolio"
+                 class="text-white-50 text-decoration-none">
+
+                Portfolio
+
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <a href="index.html#contact"
+                 class="text-white-50 text-decoration-none">
+
+                Contact
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Legal -->
+
+        <div class="col-6 col-lg-2">
+
+          <h3 class="h6 fw-bold">
+            Legal
+          </h3>
+
+          <ul class="list-unstyled">
+
+            <li class="mb-2">
+
+              <a href="privacy-policy.html"
+                 class="text-white-50 text-decoration-none">
+
+                Privacy Policy
+
+              </a>
+
+            </li>
+
+
+            <li class="mb-2">
+
+              <a href="terms.html"
+                 class="text-white-50 text-decoration-none">
+
+                Terms &amp; Conditions
+
+              </a>
+
+            </li>
+
+
+            <li class="mb-2">
+
+              <a href="disclaimer.html"
+                 class="text-white-50 text-decoration-none">
+
+                Disclaimer
+
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <a href="cookie-policy.html"
+                 class="text-white-50 text-decoration-none">
+
+                Cookie Policy
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+
+        <div class="col-lg-4">
+
+          <h3 class="h6 fw-bold">
+            Contact Us
+          </h3>
+
+          <p class="text-white-50">
+
+            <i class="bi bi-envelope me-2"></i>
+
+            privacy@example.com
+
+          </p>
+
+          <p class="text-white-50">
+
+            <i class="bi bi-telephone me-2"></i>
+
+            +91 XXXXX XXXXX
+
+          </p>
+
+          <p class="text-white-50">
+
+            <i class="bi bi-geo-alt me-2"></i>
+
+            Your Business Address, India
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Copyright -->
+
+      <div class="border-top border-secondary
+                  py-4 text-center">
+
+        <p class="text-white-50 mb-0">
+
+          &copy; 2026 XYZ Web Solutions.
+          All Rights Reserved.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       BOOTSTRAP JS
+  ====================================================== -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+
+</html>
+```
+
+Recommended legal-page structure
+
+Your current website can now have:
+
+```
+/
+├── index.html
+├── services.html
+├── about.html
+├── portfolio.html
+├── contact.html
+│
+├── privacy-policy.html
+├── terms.html
+├── disclaimer.html
+└── cookie-policy.html
+```
+
+One important implementation point: the Cookie Policy itself doesn't create cookie consent. If your site actually uses non-essential analytics/marketing cookies, you should also add a cookie-consent banner with Accept / Reject / Customize controls and ensure the relevant scripts don't load before the required consent is obtained.

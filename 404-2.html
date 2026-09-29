@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="404 - Page Not Found">
+
+  <title>404 - Page Not Found</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      background:
+        radial-gradient(circle at 50% 40%,
+          #26356f 0%,
+          #101735 45%,
+          #050816 100%);
+
+      color: #fff;
+    }
+
+    /* =========================
+       SPACE BACKGROUND
+    ========================= */
+
+    .space {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: #fff;
+      border-radius: 50%;
+
+      animation:
+        twinkle 2s infinite ease-in-out,
+        moveStars 12s linear infinite;
+    }
+
+    .star:nth-child(1) {
+      top: 15%;
+      left: 10%;
+      animation-delay: .2s;
+    }
+
+    .star:nth-child(2) {
+      top: 30%;
+      left: 25%;
+      animation-delay: .8s;
+    }
+
+    .star:nth-child(3) {
+      top: 12%;
+      left: 75%;
+      animation-delay: 1.2s;
+    }
+
+    .star:nth-child(4) {
+      top: 70%;
+      left: 15%;
+      animation-delay: .5s;
+    }
+
+    .star:nth-child(5) {
+      top: 80%;
+      left: 80%;
+      animation-delay: 1.5s;
+    }
+
+    .star:nth-child(6) {
+      top: 55%;
+      left: 90%;
+      animation-delay: .9s;
+    }
+
+    .star:nth-child(7) {
+      top: 20%;
+      left: 50%;
+      animation-delay: 1.8s;
+    }
+
+    .star:nth-child(8) {
+      top: 85%;
+      left: 45%;
+      animation-delay: .3s;
+    }
+
+    .star:nth-child(9) {
+      top: 45%;
+      left: 5%;
+      animation-delay: 1s;
+    }
+
+    .star:nth-child(10) {
+      top: 60%;
+      left: 65%;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes twinkle {
+      0%, 100% {
+        opacity: .2;
+        transform: scale(.6);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.5);
+      }
+    }
+
+    @keyframes moveStars {
+      0% {
+        margin-top: 0;
+      }
+
+      50% {
+        margin-top: -15px;
+      }
+
+      100% {
+        margin-top: 0;
+      }
+    }
+
+
+    /* =========================
+       MAIN CONTAINER
+    ========================= */
+
+    .error-page {
+      position: relative;
+      z-index: 2;
+
+      width: 90%;
+      max-width: 850px;
+
+      text-align: center;
+
+      padding: 40px 20px;
+    }
+
+
+    /* =========================
+       404 NUMBER
+    ========================= */
+
+    .error-number {
+      position: relative;
+
+      font-size: clamp(120px, 25vw, 280px);
+
+      font-weight: 900;
+      line-height: .8;
+
+      letter-spacing: -15px;
+
+      color: transparent;
+
+      background: linear-gradient(
+        180deg,
+        #ffffff,
+        #7d8cff,
+        #4754c7
+      );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      text-shadow:
+        0 15px 40px rgba(0, 0, 0, .35);
+
+      animation: float404 4s ease-in-out infinite;
+    }
+
+    @keyframes float404 {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-18px);
+      }
+    }
+
+
+    /* =========================
+       PLANET
+    ========================= */
+
+    .planet {
+      position: absolute;
+
+      width: 90px;
+      height: 90px;
+
+      right: 10%;
+      top: 15%;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle at 30% 30%,
+          #ffdf8a,
+          #ff9e4a 45%,
+          #c94e62 75%,
+          #642b72
+        );
+
+      box-shadow:
+        0 0 30px rgba(255, 173, 82, .5);
+
+      animation: planetFloat 5s ease-in-out infinite;
+    }
+
+    .planet::after {
+      content: "";
+
+      position: absolute;
+
+      width: 135px;
+      height: 35px;
+
+      border: 5px solid rgba(255,255,255,.65);
+
+      border-radius: 50%;
+
+      left: -22px;
+      top: 28px;
+
+      transform: rotate(-18deg);
+    }
+
+    @keyframes planetFloat {
+      0%, 100% {
+        transform: translateY(0) rotate(0);
+      }
+
+      50% {
+        transform: translateY(-25px) rotate(8deg);
+      }
+    }
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    h1 {
+      margin-top: 45px;
+
+      font-size: clamp(28px, 5vw, 48px);
+
+      font-weight: 700;
+
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .message {
+      max-width: 600px;
+
+      margin: 15px auto 0;
+
+      color: #c6cbea;
+
+      font-size: 18px;
+
+      line-height: 1.7;
+
+      animation: fadeUp 1.3s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .home-btn {
+      display: inline-flex;
+
+      margin-top: 30px;
+
+      padding: 14px 28px;
+
+      border-radius: 50px;
+
+      color: #fff;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 600;
+
+      background: linear-gradient(
+        135deg,
+        #6c63ff,
+        #8b5cf6
+      );
+
+      box-shadow:
+        0 10px 30px rgba(108, 99, 255, .35);
+
+      transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-5px) scale(1.03);
+
+      box-shadow:
+        0 15px 40px rgba(108, 99, 255, .55);
+    }
+
+
+    /* =========================
+       UFO
+    ========================= */
+
+    .ufo {
+      position: absolute;
+
+      left: 8%;
+      top: 25%;
+
+      width: 85px;
+      height: 35px;
+
+      background: #8d96ff;
+
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 25px #7c83ff;
+
+      animation: ufoMove 7s ease-in-out infinite;
+    }
+
+    .ufo::before {
+      content: "";
+
+      position: absolute;
+
+      width: 40px;
+      height: 25px;
+
+      left: 22px;
+      top: -14px;
+
+      border-radius: 50% 50% 20% 20%;
+
+      background: #b9c0ff;
+    }
+
+    .ufo::after {
+      content: "";
+
+      position: absolute;
+
+      width: 55px;
+      height: 12px;
+
+      left: 15px;
+      bottom: -8px;
+
+      background: rgba(112, 255, 230, .45);
+
+      filter: blur(4px);
+
+      border-radius: 50%;
+    }
+
+    @keyframes ufoMove {
+      0% {
+        transform: translate(0, 0) rotate(-5deg);
+      }
+
+      25% {
+        transform: translate(50px, -25px) rotate(5deg);
+      }
+
+      50% {
+        transform: translate(100px, 0) rotate(-5deg);
+      }
+
+      75% {
+        transform: translate(50px, 25px) rotate(5deg);
+      }
+
+      100% {
+        transform: translate(0, 0) rotate(-5deg);
+      }
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      .error-page {
+        padding: 20px;
+      }
+
+      .error-number {
+        letter-spacing: -8px;
+      }
+
+      .message {
+        font-size: 16px;
+      }
+
+      .planet {
+        width: 55px;
+        height: 55px;
+
+        right: 3%;
+        top: 12%;
+      }
+
+      .planet::after {
+        width: 85px;
+        height: 25px;
+
+        left: -15px;
+        top: 15px;
+      }
+
+      .ufo {
+        transform: scale(.7);
+        left: 2%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="space">
+
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+
+  </div>
+
+
+  <!-- Floating Planet -->
+  <div class="planet"></div>
+
+
+  <!-- Flying UFO -->
+  <div class="ufo"></div>
+
+
+  <!-- 404 Content -->
+  <main class="error-page">
+
+    <div class="error-number">
+      404
+    </div>
+
+    <h1>
+      Page Not Found
+    </h1>
+
+    <p class="message">
+      Oops! The page you're looking for seems to have
+      disappeared into space. Don't worry, let's get you
+      back to somewhere familiar.
+    </p>
+
+    <a href="/" class="home-btn">
+      ← Back to Home
+    </a>
+
+  </main>
+
+</body>
+</html>
