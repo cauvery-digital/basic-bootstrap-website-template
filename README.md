@@ -1,4 +1,4 @@
-# basic-website-bootstrap-template
+# Basic Bootstrap Website Template
 
 ## Bootstrap index Page
 
